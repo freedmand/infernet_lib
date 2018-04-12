@@ -1,0 +1,36 @@
+{
+  "name": "infernet",
+  "version": "1.0.0",
+  "description": "Library for Infernet",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "author": "Dylan Freedman",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^1.0.0-beta.3"
+  },
+  "ava": {
+    "files": [
+      "lib/*_test.js"
+    ],
+    "sources": [
+      "lib/*.js"
+    ],
+    "require": [
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@ava/stage-4"
+    ]
+  },
+  "dependencies": {
+    "@ava/babel-preset-stage-4": "^1.1.0"
+  }
+}
